@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大學生消費行為研究 - 載入中</title>
+    <script>
+        window.onload = function() {
+            // 請將引號內的網址替換為你們實際的 Google 表單連結
+            const surveyForms = [
+                "https://docs.google.com/forms/d/e/1FAIpQLSfvoa8HQIA9AIzh9Mkod3T-OCH2t0hYSZCUryowPI7CCOnoaA/viewform?usp=header",
+                "https://docs.google.com/forms/d/e/1FAIpQLSdVqVSlvtJMu_vm9D6v-vMCSwVPFAwEITIUQTvEtdmJfFJlvw/viewform?usp=header,
+                "https://docs.google.com/forms/d/e/1FAIpQLSfhyza79i6rfzDTL6cHu8Y-o5DSu_YgJul-uc_p3HB8aE0Aaw/viewform?usp=header"
+            ];
+            
+            // 完全隨機抽取 0, 1, 2 其中一個索引值 (機率各 1/3)
+            const randomIndex = Math.floor(Math.random() * surveyForms.length);
+            
+            // 執行自動重導向
+            window.location.replace(surveyForms[randomIndex]);
+        };
+    </script>
+</head>
+<body style="background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div style="text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <h2 style="color: #333; font-weight: 500;">正在為您安排問卷實驗組別...</h2>
+        <p style="color: #666; font-size: 14px;">頁面即將自動跳轉，請稍候</p>
+    </div>
+</body>
+</html>
